@@ -46,10 +46,10 @@ model User {
 }
 
 model Game {
-  id                   String   @id @default(cuid())
-  date                 DateTime
-  contryCodeFirstTeam  String
-  contryCodeSecondTeam String
+  id                    String   @id @default(cuid())
+  date                  DateTime
+  countryCodeFirstTeam  String
+  countryCodeSecondTeam String
 
   guesses Guess[]
 }
